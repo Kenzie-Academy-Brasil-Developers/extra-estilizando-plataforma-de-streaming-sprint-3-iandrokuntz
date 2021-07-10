@@ -38,66 +38,601 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
-}
-img{
-    max-width: 800px;
-}
-div.flex{
-    display: flex;
-}
-div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
-}
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
-}
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
-/* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+    }
+    img{
+        max-width: 800px;
+    }
+    div.flex{
+        display: flex;
+    }
+    div.full-container{
+        width: 100%;
+        max-width: 1850px;
+        margin:0 auto;
+    }
+    div.large-container{
+        width: 100%;
+        max-width: 1170px;
+        margin:0 auto;
+    }
+    div.container{
+        width: 100%;
+        max-width: 1140px;
+        margin:0 auto;
+    }
+    /* GERAL */
+    
+    /* HTML */
+    html{}
+    /* HTML */
+    
+    /* BODY */
+    body{
+        Background-color: #141414;
+    }
+    /* BODY */
+    
+    /* HEADER */
+    header{
+       
+    height:0px;
+    
+    }
 
-/* INICIAL */
-main{}
-/* INICIAL */
+    .secao-destaque{
+        background:url(../img/movies/ted.webp);
+        background-size: cover;
+        height:35vh;
+        
+    }
+    #secao-continuar-assistindo{
+        background:linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%)
+    }
+    .filmes{
+        position: relative;
+        top:-40px;
+    }
+    .container{
+        
+        padding: 0 30px 0 30px;
+    }
+    .pesquisar{
+        display: none;
+    }
+    .usuario{
+        position: absolute;
+        right: 15px;
+        top:15px;
+        border-radius: 100%;
+    }
+    .usuario img{
+        border-radius: 15%;
+        width: 28px;
+    }
 
-/* EXTRAS */
+    .logo img{
+        position: absolute;
+        left: 30px;
+        top: 18px;
+        width: 78px;
+    }
 
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+    .flex-column .navegar{
+        position: absolute;
+        left: 75px;
+    }
+
+    /* Checkbox Hack */
+    #abrir-submenu-mobile-element {
+        display:none;
+    }
+    
+    label{ 
+    -webkit-appearance: push-button;
+    -moz-appearance: button; 
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 5px 0 5px;
+    height: 00px;
+    width: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 80px;
+    }
+    label img{
+        width: 5px;
+        position: absolute;
+        left: 126px;
+        top:18px;
+        
+    }
+    #mostra{
+        display:none;
+    }
+    #abrir-submenu-mobile-element:checked ~ #mostra{
+        display:block;
+    }
+    #mostra li{
+        padding-left: 85px;    
+        font-size: 10px;
+    }
+    #mostra a{
+        text-decoration: none;
+        color: white;
+    }
+    .flex-column .navegar{
+        color: white;
+        height: 0px;
+        margin-top: 10px;
+    }
+
+    .secao-destaque-conteudo img{
+        position: absolute;
+        top:60px;
+        left: 30px;
+        max-width: 160px;
+        
+    }
+    .secao-destaque-conteudo p{
+        position: absolute;
+        top: 120px;
+        font-size: 12px;
+        width: 200px;
+        color: #ffffff;
+        padding-top: 15px;
+    }
+    .secao-destaque-buttons{
+        position: absolute;
+        top: 185px;
+        border-radius: 15px;
+    }
+
+    .mais-informacoes{
+        Background: rgba(109,109,110,0.7);
+        color: #ffffff;
+        font-size: 12px;
+        border-radius: 5px;
+        border: none;
+        padding: 7px 7px 7px 25px;
+        opacity: 0.9;
+        font-weight: bold;
+    }
+    .mais-informacoes img{
+        width: 13px;
+        position: absolute; 
+        top: 7.5px;
+        left: 87px;
+    }
+    .mais-informacoes:hover{
+        background-color: rgba(109,109,110,0.4);
+        
+    }
+    
+    .assistir{
+        Background: #ffffff;
+        color: #000000;
+        font-size:12px;
+        border-radius:5px;
+        border:1px;
+        padding: 7px 7px 7px 25px;
+        font-weight: bold;
+    }
+    .assistir img{
+        width: 12px;
+        position: absolute; 
+        top: 8px;
+        left: 10px;
+    }
+    .assistir:hover{
+        background-color:rgba(255,255,255,0.75);
+    }
+
+    #secao-continuar-assistindo h2{
+                   
+        padding-bottom: 5px ;                  
+        color: #e5e5e5;                
+        font-size: 17px;                
+        font-weight: bold;
+    }
+    #secao-minha-lista h2{
+        font-size: 17px;
+        color: #e5e5e5;
+        padding-top: 20px;
+    
+        padding-bottom: 5px;
+    }
+    #secao-originais-desktop{
+        display: none;
+    }
+    #secao-originais h2{
+        font-size: 17px;
+        color: #e5e5e5; 
+        padding-top: 20px;
+    
+        padding-bottom: 5px;
+    }
+    #secao-programas-para-toda-a-familia h2{
+        font-size: 17px;
+        color: #e5e5e5; 
+        padding-top: 20px;
+    
+        padding-bottom: 5px;
+    }
+    .container ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .flex-column{
+        padding-right: 5px;
+        max-width: 48%;
+        height: 70px;
+    }
+    .secao-catalogo img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .flex-column-footer li{
+        padding: 0px 2px;
+        height: 85.4px;
+    }
+
+
+    .footer-links{
+        padding-right:50px ;
+        font-size: 13px;
+        height: 70px;
+        padding-right: 50px;
+        padding-top: 20px;
+        width: 280px;
+    }
+    .footer-links li{
+        height: 20px;  
+        
+    }
+    .footer-links a{
+        text-decoration: none;
+        font-size: 13px;
+        color: gray;
+    }
+    .nav-links{
+    position: absolute;
+        
+    }
+    .centro a{
+    padding-right: 25px;   
+    }
+    .termos a{
+    padding-right: 15px;
+    }
+    .privacidade a{
+    padding-right: 25px;
+    }
+    .entre a{
+    padding-left: 25px;
+    }
+
+    .redes-sociais{
+        
+        position: absolute;
+        padding-top: 100px;
+        height: 80px;
+    }
+
+    .redes-sociais img{
+        width: 20px;
+        padding-right: 20px;
+    }
+
+
+    .copyright{
+        padding-top: 150px;
+        color: gray;
+        font-size: 11px;
+    }
+
+
+
+    /* HEADER */
+    
+    /* FOOTER */
+    footer{}
+    /* FOOTER */
+
+    /* INICIAL */
+    main{}
+    /* INICIAL */
+
+    /* EXTRAS */
+
+    /* para estilizar a scrollbar */
+    ::-webkit-scrollbar{}
+    ::-webkit-scrollbar-button{}
+    ::-webkit-scrollbar-track{}
+    ::-webkit-scrollbar-track-piece{}
+    ::-webkit-scrollbar-thumb{}
+    ::-webkit-scrollbar-corner{}
+    ::-webkit-resizer{}
 
 /* EXTRAS */
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
   
-    @media screen and (min-width: 800px) {}
+    header{
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .flex-column{
+        padding-right: 5px;
+        max-width: 48%;
+        height: 50%;
+    }
+    #secao-continuar-assistindo h2{
+        padding-left: 6px;
+    }
+
+    #secao-minha-lista h2{
+        padding-left: 6px;
+    }
+
+    #secao-originais h2{
+        padding-left: 6px;
+    }
+
+    #secao-programas-para-toda-a-familia h2{
+        padding-left: 6px;
+    }
+    
+}
+    @media screen and (min-width: 768px) {
+        
+
+    header{
+        height: 20px;
+      }
+    .secao-destaque{
+      
+        background-size: cover;
+        height:80vh;
+    }
+    label{
+        display: none;
+    }
+    #mostra{
+        display: flex; 
+        padding-left: 60px;
+    }
+    #mostra li{
+        padding-left:20px;
+        padding-top: 13px;
+    }
+    #mostra a{
+        font-size: 14px;
+    }
+    .logo img{
+        width: 92px;
+    }
+    .usuario img{
+        width: 32px;
+    }
+    .pesquisar{
+        display: flex;
+        position: absolute;
+        right:75px;
+        top: 22px;
+    }
+    .pesquisar img{
+        width: 19px;
+    }
+
+    .secao-destaque-conteudo img{
+        max-width: 650px;
+        padding-top: 120px;
+        padding-left: 30px;
+    }
+    .secao-destaque-conteudo p{
+        position: absolute;
+        left: 62px;
+        width: 600px;
+        padding-top: 350px;
+        font-size: 26px;
+        text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    }
+    .secao-destaque-buttons{
+        padding-top: 370px;
+        position: absolute;
+        left: 63px;
+    }
+    
+    .assistir{
+        font-size: 22px;
+        padding: 7px 20px 7px 50px;
+    }
+    .assistir img{
+        width: 18px;
+        padding-top: 374px;
+        padding-left: 13px;
+    }
+    .mais-informacoes{
+        font-size: 22px;
+        padding: 9px 20px 9px 40px;
+    }
+    .mais-informacoes img{
+        width: 18px;
+        padding-top: 375px;
+        padding-left:80px;
+    }
+
+    #secao-continuar-assistindo h2{
+        
+        padding-left: 0;
+        font-size: 26px; 
+        padding-left: 38px;
+    }
+
+    #secao-continuar-assistindo h2{
+        
+        font-size: 26px;
+    }
+    #secao-minha-lista{
+        padding-top: 30px;
+    }
+    #secao-minha-lista h2{
+        padding-left: 38px;
+        font-size: 26px;
+    }
+
+    #secao-originais{
+        display: none;
+    }
+    #secao-originais-desktop{
+        padding-top: 30px;
+        padding-bottom: 210px;
+        display: flex;
+    }
+    #secao-originais-desktop h2{
+        padding-left: 38px;
+        font-size: 26px;
+        color: #e5e5e5; 
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    #secao-programas-para-toda-a-familia{
+       padding-top: 30px;
+    }
+    #secao-programas-para-toda-a-familia h2{
+        padding-left: 38px;
+        font-size: 26px;
+    }
+
+    .container ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .flex-column{
+        padding-right: 5px;
+        max-width: 15%;
+        height: 70px;
+    }
+    .filmes{
+       
+        position:absolute;
+        top:  700px;
+        width: 100%;
+        
+    }
+    .secao-catalogo img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .container{
+        max-width: 1735px;
+    }
+
+
+
+
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+       
+    }
+   
+    .flex-column-footer li{
+        padding: 0px 2px;
+        height: 85.4px;
+       
+    }
+
+
+    .footer-links{
+        padding-right:50px ;
+        font-size: 13px;
+        height: 70px;
+        padding-right: 50px;
+        padding-top: 50px;
+        width: 200px;
+    }
+    .footer-links li{
+        height: 20px;  
+    
+    }
+    .footer-links a{
+        text-decoration: none;
+        font-size: 13px;
+        color: gray;
+    }
+    .nav-links{
+        position: absolute;
+        left:260px;
+        top:800px;
+    }
+    .footer-links li{
+        padding-bottom: 15px;
+    }
+    .centro a{
+        padding-right: 10px;
+       
+    }
+    .termos a{
+        padding-right: 20px;
+    }
+    .privacidade a{
+        padding-right: 32px;
+    }
+    .entre a{
+        padding-right: 2px;
+        padding-left: 0;
+    }
+
+    .redes-sociais{
+        
+        position: absolute;
+        top:722px;
+        left: 800px;
+        width: 100%;
+        height: 80px;
+    }
+
+    .redes-sociais img{
+        width: 20px;
+        padding-right: 20px;
+    }
+
+
+    .copyright{
+        
+        
+        top:900px;
+        padding-top: 1030px;
+        padding-left: 250px;
+        color: gray;
+        font-size: 11px;
+    }
+
+
+
+
+
+
+
+    
+    }
 /* MEDIA QUERIES */
